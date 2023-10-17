@@ -14,8 +14,8 @@ function App() {
         <li>support us</li>
       </nav>
     </header>
-    <CharacterRatings fmaData={data}/>
-    <CharacterCards characters={data}/>
+    <CharacterRatings data={data}/>
+    <CharacterCards data={data}/>
     </>
   )
 }

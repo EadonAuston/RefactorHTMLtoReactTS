@@ -1,15 +1,8 @@
 import "./CSS/character-ratings.css";
-type fmaDataType = {
-  name: string;
-  skillset: string[];
-  votes: number;
-  imageUrl: string;
-  background: string;
-  nickName: null | string;
-};
+import { fmaDataType } from "./types";
 
-function CharacterRatings({ fmaData }: { fmaData: fmaDataType[] }) {
-  const sortedData = [...fmaData].sort((a, b) => b.votes - a.votes);
+function CharacterRatings({ data }: { data: fmaDataType[] }) {
+  const sortedData = [...data].sort((a, b) => b.votes - a.votes);
   return (
     <>
       <section id="character-ratings">
